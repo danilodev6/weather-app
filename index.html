@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="" href="src/style.css" />
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div id="imgContainer">
+        <img id="imgWeather" src="img/clear.png" alt="" />
+      </div>
+      <div id="search">
+        <label for="button">
+          <input
+            id="searchInput"
+            type="text"
+            name="search"
+            value=""
+            spellcheck="false"
+            placeholder="Enter your city"
+            autocomplete="off"
+          />
+        </label>
+        <button id="button"><img src="img/search.png" alt="" /></button>
+      </div>
+      <div id="errorName">
+        <p>Invalid city</p>
+      </div>
+      <div id="weather">
+        <h2 id="degrees">-</h2>
+        <div id="minMax">
+          <div id="min">
+            <p>-</p>
+          </div>
+          <div id="max">
+            <p>-</p>
+          </div>
+        </div>
+        <p id="city">-</p>
+      </div>
+      <div id="details">
+        <div class="col">
+          <div>
+            <p id="humidity">0%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div>
+            <p id="wind">0 km/h</p>
+            <p>Wind</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Kanit;
+  font-size: 18px;
+}
+
+body {
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#app {
+  background-image: url("../img/sunny.png");
+  margin: auto;
+  width: 350px;
+  height: 500px;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#imgContainer {
+  position: absolute;
+  top: 10px;
+}
+
+#imgContainer img {
+  width: 290px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+#search {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  opacity: 0.85;
+}
+
+#search input:focus-visible {
+  outline: none;
+}
+
+#search input {
+  border: none;
+  border-radius: 16px;
+  height: 30px;
+  padding: 4px;
+  padding-left: 14px;
+  font-size: 0.8em;
+}
+
+#button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+#button img {
+  width: 30px;
+  height: 30px;
+}
+
+#errorName {
+  display: none;
+  position: absolute;
+  top: 40px;
+}
+
+#errorName p {
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 70%;
+  height: 170px;
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0;
+  color: #fff;
+}
+
+#weather h2 {
+  font-size: 3em;
+}
+
+#minMax {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 200;
+}
+
+#weather p {
+  /*font-size: 1.6em;*/
+  font-size: clamp(1em, 1.4em, 1.8em);
+}
+
+#details {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+  padding: 15px;
+  margin-top: 60px;
+  font-weight: 200;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.col div {
+  width: 100%;
+}
